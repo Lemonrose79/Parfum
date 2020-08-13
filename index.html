@@ -30,8 +30,18 @@
                             <div class="form-group">
                               <label for="exampleFormControlInput1">List the scent you are currently wearing</label>
                               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Perfume Name">
+                              <button type="button" class="btn btn-dark">Search</button>
                             </div>
+                            <button-data-search= "search">Search</button>
                     </form>
+                    <script type="text/javascript">
+                    $('button').on('click', function({
+                        var perfume = $(this).data("search");
+
+                        var queryURL = "http://scentsee.com/rest/"
+                        console.log(queryURL);
+                    })
+                    </script>
               <div class="col-6 col-md-4">TOP NOTES:</div>
               <div class="col-6 col-md-4">HEART NOTES</div>
               <div class="col-6 col-md-4">BASE NOTES</div>
